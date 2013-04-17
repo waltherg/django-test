@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row-fluid">
+  <div class="span6">
+    <h2>Site Content Index</h2>
+    {% for article in article_list %}
+        <li>{{ article.title }}</li>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %} 
