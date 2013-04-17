@@ -22,4 +22,6 @@ urlpatterns = patterns('',
     url(r'^accounts/', include('userena.urls')),
     #(r'^accounts/', include('allauth.urls')),
 
+    #url(r'^catalog/', include('catalog.urls')),
+    url(r'^catalog/', include('core.urls')),
 )
